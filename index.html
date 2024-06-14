@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfoilio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6918556aa5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo-old.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+        <div class="header-text">
+            <p>CS Student</p>
+            <h1>Hi, my name is <span>Aidan</span><br>Mahoney and I'm from New Jersey</h1>
+        </div>
+    </div>
+</div>
+<!-------------About-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey, I'm Aidan! I'm currently a Computer Science student persuing a Bachelor's degree in Science.
+                During my free time, I enjoy tinkering with different projects that pertains to
+                different fields of technology. Eventually, I want to persue a degree in Mechatronics. I've always been fascinated
+                in the possibilites robotics can have in medicine. I want to be able to use my skills in order to help people.
+                I hope you enjoy your stay here!
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">
+                    <ul>
+                        <li><span>Computer Programmer</span><br>Software Development</li>
+                        <li><span>Full Stack</span><br>Game Development</li>
+                        <li><span>Tinkerer</span><br>Hardware</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2026</span><br>B.S. in Computer Science at University of Wisconsin-Madison</li>
+                         <!---
+                        <li><span>Year</span><br>M.S. in at</li>
+                         --->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------Services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>Expertise in computer programming languages such as Java, Python, and Lua.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Databases</h2>
+                <p>Experience with databases and SQL.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Graphic Design</h2>
+                <p>Experimented with graphic design.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------Portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Mystidel: ROBLOX MMORPG</h3>
+                    <p>Mystidel is a passion project in my freshman year of high school. It is an MMORPG on the Roblox platform
+                        consisting of many aspects such as a storyline, bosses and quests. The game currently has around 75,000
+                        lines of code, consisting of something large like the game's main database for stats (HP, Stamina, Mana) and something small like a player's inventory.
+                        While Roblox has a physics simulation by default, I implemeted my own form of a physics simulation for some moves like magic projectiles
+                        or dashing. As the Project-Lead of Mystidel, I am tasked with making sure the team fulfills tasks and coding the majority of the game.
+                        The game was coded completely in rLua. The game is still in development.
+                    </p>
+                    <a href="https://www.roblox.com/games/6593273934/Mystidel-PRE-ALPHA"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="">
+                <div class="layer">
+                    <h3>Cube-Shaped Server</h3>
+                    <p>At the time of creation, I was a college student in my second year, undergoing the process of transferring to another school. I have never stayed in a dorm before,
+                        and knew many people would be using the same wifi I was using. As a result, I would be restricted to an extent. The solution to this problem,
+                        you ask? Making my own server of course! All jokes aside, I wanted to make a project with a Raspberry Pi 4, and thought that unlike most projects, this one
+                        is very useful. It also comes with UPS and SSD storage! At the end of the day, every server in the world is a computer, and so is a Rasperry Pi. 
+                        The original design of the server rack is created by Michael Klements.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=fUC3q2xKIaE"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Pomodoro Timer</h3>
+                    <p>As a student in college, I undergo tedious amounts of studying. Over my time spent in college, I learned to work smarter not harder. Instead of brute forcing my way 
+                        through studying, I learned better methods. One of them is the Pomodoro method. In this method, a student takes intervals of studying like 30 minutes with 5-15
+                        minute breaks, instead of non-stop studying with no breaks. I was able to make a Pomodoro Timer that would help me in my studies via java script.
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=q8iKb-nxSm0"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://docs.google.com/document/d/1KVEL6m_cAkglPwD5eJ0rgB4SpGS9Z0BUQKN_XnBR_8U" class="btn">See more</a>
+    </div>
+</div>
+<!-------------Services-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> aidanmahoneyemail@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/aidanmmahoney?igsh=MWl3YW0wbW80ZjB3eg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aidan-mahoney-30114b2b0/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCfoWg7PSRMO71Dq0a41locA"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aidan.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbznIQbFfoHsonE3WtSBOSwiAZMycsDU7Y1dMETxcqYdS0sqqoZzTjgDrxPDv1SbpBtRDA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
